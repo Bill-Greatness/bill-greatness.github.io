@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+body{
+    font-family: Sen;
+    background-color: lightgrey !important;
+    height:100vh;
+}
+
+.ui :is(.header, .item, .button){
+    font-family:Sen !important;
+}
+
+.panes{
+    height:60vh;
+    overflow-y:auto;
+}
+
+.section{
+    background-color: #fff !important;
+    background-size: contain;
+    background-image: url(../src/data/bg.png) !important;
+    background-blend-mode: multiply !important;
+}
+
+p{
+    font-family:Sen;
+}
+.social{
+    display:flex !important;
+    justify-content: center !important;
+    margin-bottom: 5px;
+}
