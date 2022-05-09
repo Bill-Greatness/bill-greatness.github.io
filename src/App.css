@@ -2,11 +2,14 @@
 
 body{
     font-family: Sen;
-    background-color: lightgrey !important;
+    background-color: black !important;
     height:100vh;
+    background-size: contain;
+    background-image: url(./data/bg.png) !important;
+    background-blend-mode: difference !important;
 }
 
-.ui :is(.header, .item, .button){
+.ui :is(.header, .item, .button, .description, .meta){
     font-family:Sen !important;
 }
 
@@ -15,15 +18,20 @@ body{
     overflow-y:auto;
 }
 
-.section{
+.profile{
     background-color: #fff !important;
     background-size: contain;
     background-image: url(../src/data/bg.png) !important;
     background-blend-mode: multiply !important;
+    clip-path: polygon(16% 0, 100% 0, 100% 90%, 82% 100%, 0 100%, 0 10%);
 }
 
-p{
+p, a{
     font-family:Sen;
+}
+.link{
+    color: orange !important;
+    font-size: 12px;
 }
 .social{
     display:flex !important;

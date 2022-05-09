@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Info from './about'
+import Info from './about/info'
 
 
 export default function App(){
