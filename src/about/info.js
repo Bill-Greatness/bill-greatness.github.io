@@ -107,15 +107,14 @@ export default function Info() {
                           </a>
                         </Card.Meta>
                         <Card.Description>
-                          <p style={{ fontSize: "10px" }}>
+                          <p style={{ fontSize: "12px" }}>
                             <Icon name="terminal" size="small" />
                             {info.cred.accessCode}
                           </p>
-                          <p style={{ fontSize: "10px" }}>
+                          <p style={{ fontSize: "12px" }}>
                             <Icon name="envelope" size="small" />
                             {info.cred.mail}
-                          </p>
-                          <p style={{ fontSize: "10px" }}>
+                            {"  >>>  "}
                             <Icon name="lock" size="small" />
                             {info.cred.pwd}
                           </p>
