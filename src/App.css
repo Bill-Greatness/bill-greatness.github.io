@@ -4,7 +4,8 @@ body{
     font-family: Sen;
     background-color: black !important;
     height:100vh;
-    background-size: contain;
+    padding:10px;
+    background-size: fixed;
     background-image: url(./data/bg.png) !important;
     background-blend-mode: difference !important;
 }
@@ -17,10 +18,9 @@ body{
 .profile{
     background-color: #fff !important;
     background-size: contain;
-    background-image: url(../src/data/bg.png) !important;
-    background-blend-mode: multiply !important;
+    background-image: url(../src/data/bg.png) multiply center center fixed !important;
     height: 100vh !important;
-    clip-path: polygon(16% 0, 100% 0, 100% 90%, 82% 100%, 0 100%, 0 10%);
+    /* clip-path: polygon(16% 0, 100% 0, 100% 90%, 82% 100%, 0 100%, 0 10%); */
 }
 
 p, a{
@@ -34,4 +34,43 @@ p, a{
     display:flex !important;
     justify-content: center !important;
     margin-bottom: 5px;
+}
+
+.info{
+    z-index: 1000;
+    margin-top:0 !important;
+    width: inherit;
+    padding: 10px;
+    position: fixed !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.desc{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    margin-top: 110%;
+    padding:7px;
+}
+.projects{
+    padding-top:25px !important;
+}
+
+@media screen and (max-width:568px) {
+    .info{
+        background-color: inherit;
+        z-index: 1000;
+    }
+    .desc{
+        margin-top: 100%;
+    }
+}
+
+@media screen and (max-width:839px) {
+    .desc{
+        margin-top: 70%;
+    }
 }

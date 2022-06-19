@@ -55,7 +55,7 @@ export const projects = [
   {
     meta: "My Startup",
     header: "Logic Kids Ghana",
-    content: `Training kids to code... Wish me success!😊`,
+    content: `Training kids to code...😊`,
     link: "https://thelogickids.com",
   },
   {
@@ -73,7 +73,7 @@ export const projects = [
   {
     header: "JSON Samples API",
     meta: "Hobby Project (Golang & Gin)",
-    content: "Query API for sample JSON samples",
+    content: "Query API for JSON samples",
     link: "https://github.com/bill-greatness/generate-json-samples",
   },
   {
