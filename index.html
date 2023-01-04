@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debrah Bill Clinton - Software Developer</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn3.iconfinder.com/data/icons/remixicon-logos/24/github-fill-256.png"
+      type="image/x-icon"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Mali&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: mali, sen;
+      }
+      body {
+        background-image: linear-gradient(70deg, teal, midnightblue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      main {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid red; */
+        border-radius: 5%;
+        background-image: linear-gradient(70deg, silver, white);
+        box-shadow: 10px 10px 20px #ccc;
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        margin-bottom: 15px;
+      }
+
+      .profiles img {
+        width: 30px;
+        margin: 4px 2px;
+      }
+
+      .profiles img:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+      }
+
+      h3 {
+        font-size: x-large;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .about {
+        text-align: center;
+        margin: 15px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- What brought you here? Eh?? -->
+    <main>
+      <img class="profile-img" src="./bill-greatness.jpg" alt="" />
+      <div class="about">
+        <h3>Debrah, Bill Clinton</h3>
+        <p>Author | Software Developer | Entrepreneur</p>
+      </div>
+      <div class="profiles">
+        <a
+          href="https://linkedin.com/in/bill-clinton-debrah-086278196"
+          title="Linkedin"
+        >
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/linkedin-256.png"
+            alt="Linkedin"
+          />
+        </a>
+        <a href="https://twitter.com/bill_greatness" title="Twitter">
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter2_colored_svg-512.png"
+            alt=" Twitter"
+          />
+        </a>
+        <a href="https://github.com/bill-greatness" title="Github">
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/remixicon-logos/24/github-fill-256.png"
+            alt="Github"
+          />
+        </a>
+        <a
+          href="https://stackoverflow.com/users/10958531/bill-greatness"
+          title="Stackoverflow"
+        >
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/stackoverflow-256.png"
+            alt="Stackoverflow"
+          />
+        </a>
+        <a href="https://1drv.ms/b/s!Aq4jxV6Tax9ckyH885cKzglXwkx4" title="CV">
+          <img
+            src="https://cdn3.iconfinder.com/data/icons/business-and-employment-2/48/cv_curriculum_vitae_document_information-256.png"
+            alt="CV"
+          />
+        </a>
+      </div>
+    </main>
+    <script>
+      // Don't worry about my code... for example; this comment here means nothing!
+      const links = document.getElementsByTagName("a");
+      for (var a of links) {
+        a.setAttribute("target", "_blank");
+      }
+    </script>
+  </body>
+</html>
